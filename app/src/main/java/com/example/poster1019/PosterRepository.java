@@ -120,48 +120,68 @@ public class PosterRepository {
         }
     }
 
+
+    /**
+     * Creates the five custom movie posters displayed in the app.
+     * Each poster contains a unique ID, image, title, rating,
+     * director, and story description.
+     */
     private static List<Posters> createPosters() {
         List<Posters> posters = new ArrayList<>();
 
-        Posters the100 = new Posters();
-        the100.id = "vietnam";
-        the100.image = R.drawable.poster3;
-        the100.name = "Vietnam Movie";
-        the100.rating = 5f;
-        the100.createdBy = "Cuong Ngo";
-        the100.story = "This is an Vietnam Movie with a young lady";
-        posters.add(the100);
+        // Create the Interstellar movie poster.
+        Posters interstellar = new Posters();
+        interstellar.id = "interstellar";
+        interstellar.image = R.drawable.interstellar;
+        interstellar.name = "Interstellar";
+        interstellar.rating = 5.0f;
+        interstellar.createdBy = "Christopher Nolan";
+        interstellar.story = "A team of astronauts travels through a wormhole to find a new home for humanity.";
+        posters.add(interstellar);
 
-        Posters chineseMovie = new Posters();
-        chineseMovie.id = "chinese";
-        chineseMovie.image = R.drawable.poster4;
-        chineseMovie.name = "Chinese Movie";
-        chineseMovie.rating = 4f;
-        chineseMovie.createdBy = "Zhang San";
-        chineseMovie.story = "This is an Chinese Movie with a young lady.";
-        posters.add(chineseMovie);
+        // Create the Inception movie poster.
+        Posters inception = new Posters();
+        inception.id = "inception";
+        inception.image = R.drawable.inception;
+        inception.name = "Inception";
+        inception.rating = 4.8f;
+        inception.createdBy = "Christopher Nolan";
+        inception.story = "A skilled thief enters people's dreams to steal secrets and plant ideas.";
+        posters.add(inception);
 
-        Posters japanMovie = new Posters();
-        japanMovie.id = "japanese";
-        japanMovie.image = R.drawable.poster1;
-        japanMovie.name = "Japanese Movie";
-        japanMovie.rating = 3f;
-        japanMovie.createdBy = "Juzo Itami";
-        japanMovie.story = "This is an Japanese Movie.";
-        posters.add(japanMovie);
+        // Create The Dark Knight movie poster.
+        Posters darkKnight = new Posters();
+        darkKnight.id = "dark_knight";
+        darkKnight.image = R.drawable.dark_knight;
+        darkKnight.name = "The Dark Knight";
+        darkKnight.rating = 4.9f;
+        darkKnight.createdBy = "Christopher Nolan";
+        darkKnight.story = "Batman faces the Joker, a criminal mastermind who threatens Gotham City.";
+        posters.add(darkKnight);
 
-        Posters americanMovie = new Posters();
-        americanMovie.id = "american";
-        americanMovie.image = R.drawable.poster2;
-        americanMovie.name = "American Movie";
-        americanMovie.rating = 5f;
-        americanMovie.createdBy = "Tim Burton";
-        americanMovie.story = "This is an American Movie.";
-        posters.add(americanMovie);
+        // Create the Dune movie poster.
+        Posters dune = new Posters();
+        dune.id = "dune";
+        dune.image = R.drawable.dune;
+        dune.name = "Dune";
+        dune.rating = 4.6f;
+        dune.createdBy = "Denis Villeneuve";
+        dune.story = "Paul Atreides travels to the dangerous desert planet Arrakis, where his destiny awaits.";
+        posters.add(dune);
+
+        // Create the Oppenheimer movie poster.
+        Posters oppenheimer = new Posters();
+        oppenheimer.id = "oppenheimer";
+        oppenheimer.image = R.drawable.oppenheimer;
+        oppenheimer.name = "Oppenheimer";
+        oppenheimer.rating = 4.8f;
+        oppenheimer.createdBy = "Christopher Nolan";
+        oppenheimer.story = "The story of J. Robert Oppenheimer and his role in developing the atomic bomb.";
+        posters.add(oppenheimer);
 
         return posters;
-
     }
+
 
 
 }

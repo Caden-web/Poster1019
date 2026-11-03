@@ -2,7 +2,8 @@
     <string name="app_name">Poster1019</string>
     <string name="add_to_watchlist">Add To Watchlist</string>
     <string name="posters">Posters</string>
-
+    <string name="nav_spotlight">Movie Spotlight</string>
+    <string name="title_spotlight">Movie Spotlight</string>
     <string name="nav_main">Main Page</string>
     <string name="nav_favorites">Favorite List</string>
     <string name="nav_contact">Contact Us</string>

@@ -44,7 +44,9 @@
             android:textSize="13sp"/>
 
         <!-- Company info-->
+        <!-- Description that changes when the button is clicked -->
         <TextView
+            android:id="@+id/contactDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -52,6 +54,15 @@
             android:text="@string/company_intro"
             android:textColor="@color/colorTextPrimary"
             android:textSize="15sp"/>
+
+        <!-- Button that displays the student's introduction -->
+        <Button
+            android:id="@+id/btnIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="About Me"
+            android:textAllCaps="false"/>
 
         <!--  Divider line. -->
         <View
